@@ -1,0 +1,120 @@
+PixelDAQ/include/PixelReadoutTest.hh:#include "CAENDigitizer.h"
+PixelDAQ/include/PixelReadoutTest.hh:  std::vector<int> handle; //handler will be used for most of CAENDigitizer functions to identify the board       
+PixelDAQ/include/PixelReadout.hh:#include "CAENDigitizer.h"
+PixelDAQ/include/PixelReadout.hh:  std::vector<int> handle; //handler will be used for most of CAENDigitizer functions to identify the board       
+PixelDAQ/Makefile:DEPLIBS	=	-lCAENDigitizer -lCAENComm
+CAENDigitizer_2.11.0/include/CAENDigitizer.h:* \file     CAENDigitizer.h
+CAENDigitizer_2.11.0/include/CAENDigitizer.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/include/CAENDigitizerType.h:* \file     CAENDigitizerType.h
+CAENDigitizer_2.11.0/install:	echo "* The CAENDigitizer library needs that the CAENComm               *"
+CAENDigitizer_2.11.0/install:	LIBNAME="libCAENDigitizer.so.2.11.0"
+CAENDigitizer_2.11.0/install:	ln -sf "$DESTDIR/$LIBNAME" "$DESTDIR/libCAENDigitizer.so"
+CAENDigitizer_2.11.0/install_64:	echo "* The CAENDigitizer library needs that the CAENComm               *"
+CAENDigitizer_2.11.0/install_64:	LIBNAME="libCAENDigitizer.so.2.11.0"
+CAENDigitizer_2.11.0/install_64:	ln -sf "$DESTDIR/$LIBNAME" "$DESTDIR/libCAENDigitizer.so"
+CAENDigitizer_2.11.0/Readme.txt:    CAENDigitizer Library Rel. 2.11.0
+CAENDigitizer_2.11.0/Readme.txt: The complete documentation can be found in the CAENDigitizer Library Manual
+CAENDigitizer_2.11.0/ReleaseNotes.txt:  CAENDigitizer Library Release Notes
+CAENDigitizer_2.11.0/ReleaseNotes.txt:  This document is updated for every official release of the CAENDigitizer Library 
+CAENDigitizer_2.11.0/ReleaseNotes.txt:    - Defined in CAENDigitizerType.h header the DPP codes.
+CAENDigitizer_2.11.0/ReleaseNotes.txt:    - Structure 'CAEN_DGTZ_Correction_t' moved in 'CAENDigitizerType.h'
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/Makefile:##   CAENDigitizer Software Project
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/Makefile:DEPLIBS	=	-lCAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/src/ReadoutTest_Digitizer.c~:#include "CAENDigitizer.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/src/ReadoutTest_Digitizer.c~:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/src/ReadoutTest_Digitizer.c~:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/src/ReadoutTest_Digitizer.c~:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/src/ReadoutTest_Digitizer.c:#include "CAENDigitizer.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/src/ReadoutTest_Digitizer.c:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/src/ReadoutTest_Digitizer.c:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_Digitizer/src/ReadoutTest_Digitizer.c:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/include/Functions.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/Makefile:##   CAENDigitizer Software Project
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/Makefile:DEPLIBS	=	-lCAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/src/ReadoutTest_DPP_CI_x720.c:#include <CAENDigitizer.h>
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/src/ReadoutTest_DPP_CI_x720.c:// it is needed for consistency inside the CAENDigitizer's functions used to allocate the memory
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/src/ReadoutTest_DPP_CI_x720.c:    /* This function uses the CAENDigitizer API functions to perform the digitizer's initial configuration */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/src/ReadoutTest_DPP_CI_x720.c:    see CAENDigitizer user manual, chapter "Trigger configuration" for details */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/src/ReadoutTest_DPP_CI_x720.c:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/src/ReadoutTest_DPP_CI_x720.c:    CAENDigitizer API functions (see below), so they must not be initialized here
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/src/ReadoutTest_DPP_CI_x720.c:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_CI_x720/src/ReadoutTest_DPP_CI_x720.c:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/include/Functions.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/Makefile:##   CAENDigitizer Software Project
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/Makefile:DEPLIBS	=	-lCAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/src/ReadoutTest_DPP_PHA_x724_x781.c:#include <CAENDigitizer.h>
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/src/ReadoutTest_DPP_PHA_x724_x781.c:// it is needed for consistency inside the CAENDigitizer's functions used to allocate the memory
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/src/ReadoutTest_DPP_PHA_x724_x781.c:    /* This function uses the CAENDigitizer API functions to perform the digitizer's initial configuration */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/src/ReadoutTest_DPP_PHA_x724_x781.c:    see CAENDigitizer user manual, chapter "Trigger configuration" for details */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/src/ReadoutTest_DPP_PHA_x724_x781.c:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/src/ReadoutTest_DPP_PHA_x724_x781.c:    CAENDigitizer API functions (see below), so they must not be initialized here
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/src/ReadoutTest_DPP_PHA_x724_x781.c:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x724_x781/src/ReadoutTest_DPP_PHA_x724_x781.c:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/include/Functions.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/Makefile:##   CAENDigitizer Software Project
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/Makefile:DEPLIBS	=	-lCAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/src/ReadoutTest_DPP_PHA_x725_x730.c:#include <CAENDigitizer.h>
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/src/ReadoutTest_DPP_PHA_x725_x730.c:// it is needed for consistency inside the CAENDigitizer's functions used to allocate the memory
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/src/ReadoutTest_DPP_PHA_x725_x730.c:    /* This function uses the CAENDigitizer API functions to perform the digitizer's initial configuration */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/src/ReadoutTest_DPP_PHA_x725_x730.c:    see CAENDigitizer user manual, chapter "Trigger configuration" for details */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/src/ReadoutTest_DPP_PHA_x725_x730.c:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/src/ReadoutTest_DPP_PHA_x725_x730.c:    CAENDigitizer API functions (see below), so they must not be initialized here
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/src/ReadoutTest_DPP_PHA_x725_x730.c:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x725_x730/src/ReadoutTest_DPP_PHA_x725_x730.c:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/include/Functions.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/Makefile:##   CAENDigitizer Software Project
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/Makefile:DEPLIBS	=	-lCAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/src/ReadoutTest_DPP_PHA_x780.c:#include <CAENDigitizer.h>
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/src/ReadoutTest_DPP_PHA_x780.c:// it is needed for consistency inside the CAENDigitizer's functions used to allocate the memory
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/src/ReadoutTest_DPP_PHA_x780.c:    /* This function uses the CAENDigitizer API functions to perform the digitizer's initial configuration */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/src/ReadoutTest_DPP_PHA_x780.c:    see CAENDigitizer user manual, chapter "Trigger configuration" for details */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/src/ReadoutTest_DPP_PHA_x780.c:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/src/ReadoutTest_DPP_PHA_x780.c:    CAENDigitizer API functions (see below), so they must not be initialized here
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/src/ReadoutTest_DPP_PHA_x780.c:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PHA_x780/src/ReadoutTest_DPP_PHA_x780.c:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/include/Functions.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/Makefile:##   CAENDigitizer Software Project
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/Makefile:DEPLIBS	=	-lCAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/src/ReadoutTest_DPP_PSD_x720.c:#include <CAENDigitizer.h>
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/src/ReadoutTest_DPP_PSD_x720.c:// it is needed for consistency inside the CAENDigitizer's functions used to allocate the memory
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/src/ReadoutTest_DPP_PSD_x720.c:    /* This function uses the CAENDigitizer API functions to perform the digitizer's initial configuration */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/src/ReadoutTest_DPP_PSD_x720.c:    see CAENDigitizer user manual, chapter "Trigger configuration" for details */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/src/ReadoutTest_DPP_PSD_x720.c:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/src/ReadoutTest_DPP_PSD_x720.c:    CAENDigitizer API functions (see below), so they must not be initialized here
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/src/ReadoutTest_DPP_PSD_x720.c:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x720/src/ReadoutTest_DPP_PSD_x720.c:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/include/Functions.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/Makefile:##   CAENDigitizer Software Project
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/Makefile:DEPLIBS	=	-lCAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/src/ReadoutTest_DPP_PSD_x725_x730.c:#include <CAENDigitizer.h>
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/src/ReadoutTest_DPP_PSD_x725_x730.c:// it is needed for consistency inside the CAENDigitizer's functions used to allocate the memory
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/src/ReadoutTest_DPP_PSD_x725_x730.c:    /* This function uses the CAENDigitizer API functions to perform the digitizer's initial configuration */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/src/ReadoutTest_DPP_PSD_x725_x730.c:    see CAENDigitizer user manual, chapter "Trigger configuration" for details */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/src/ReadoutTest_DPP_PSD_x725_x730.c:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/src/ReadoutTest_DPP_PSD_x725_x730.c:    CAENDigitizer API functions (see below), so they must not be initialized here
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/src/ReadoutTest_DPP_PSD_x725_x730.c:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x725_x730/src/ReadoutTest_DPP_PSD_x725_x730.c:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/include/Functions.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/Makefile:##   CAENDigitizer Software Project
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/Makefile:DEPLIBS	=	-lCAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/src/ReadoutTest_DPP_PSD_x751.c:#include <CAENDigitizer.h>
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/src/ReadoutTest_DPP_PSD_x751.c:// it is needed for consistency inside the CAENDigitizer's functions used to allocate the memory
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/src/ReadoutTest_DPP_PSD_x751.c:    /* This function uses the CAENDigitizer API functions to perform the digitizer's initial configuration */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/src/ReadoutTest_DPP_PSD_x751.c:    see CAENDigitizer user manual, chapter "Trigger configuration" for details */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/src/ReadoutTest_DPP_PSD_x751.c:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/src/ReadoutTest_DPP_PSD_x751.c:    CAENDigitizer API functions (see below), so they must not be initialized here
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/src/ReadoutTest_DPP_PSD_x751.c:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x751/src/ReadoutTest_DPP_PSD_x751.c:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/include/Functions.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/Makefile:##   CAENDigitizer Software Project
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/Makefile:DEPLIBS	=	-lCAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/src/ReadoutTest_DPP_PSD_x790.c:#include <CAENDigitizer.h>
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/src/ReadoutTest_DPP_PSD_x790.c:// it is needed for consistency inside the CAENDigitizer's functions used to allocate the memory
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/src/ReadoutTest_DPP_PSD_x790.c:    /* This function uses the CAENDigitizer API functions to perform the digitizer's initial configuration */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/src/ReadoutTest_DPP_PSD_x790.c:    see CAENDigitizer user manual, chapter "Trigger configuration" for details */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/src/ReadoutTest_DPP_PSD_x790.c:    /* The following variable is the type returned from most of CAENDigitizer
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/src/ReadoutTest_DPP_PSD_x790.c:    CAENDigitizer API functions (see below), so they must not be initialized here
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/src/ReadoutTest_DPP_PSD_x790.c:    handler will be used for most of CAENDigitizer functions to identify the board */
+CAENDigitizer_2.11.0/samples/ReadoutTest_DPP_PSD_x790/src/ReadoutTest_DPP_PSD_x790.c:        for different connection methods (USB, Conet, ecc). Refer to CAENDigitizer user manual for more info.
+CAENDigitizer_2.11.0/samples/x742_DataCorrection/X742CorrectionRoutines.h:#include "CAENDigitizerType.h"
+CAENDigitizer_2.11.0/samples/x742_DataCorrection/X742DecodeRoutines.h:#include <CAENDigitizer.h>
