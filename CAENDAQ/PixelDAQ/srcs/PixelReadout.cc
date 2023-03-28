@@ -1,15 +1,17 @@
-//##########################################################################
-//## Title:       PixelReadout.cc                                         ##
-//## Author:      Dominic Barker                                          ##
-//## Description: Class for the running the Pixel Readout. This includes  ##
-//##              functions for including the reading of the config file, ##
-//##              starting the board, setting the trigger levels,         ##
-//##              starting aqiusition and online monitoring. In addition  ##
-//##              the config for the ASICs is set read into the arduino   ##
-//##              code. This code provides the structure to run the DAQ.  ##
-//##              However DAQDriver.cc runs the DAQ                       ##    
-//## Updates:     28th Nov 2018 - Readout stream complete                 ##
-//##########################################################################            
+//#############################################################################
+//## Title:       PixelReadout.cc                                           ###
+//## Author:      Dominic Barker                                            ###
+//## Updated:     Ala Zglam                                                 ###
+//## Description: Class for the running the Pixel Readout. This includes    ###
+//##              functions for including the reading of the config file,   ###
+//##              starting the board, setting the trigger levels,           ###
+//##              starting aqiusition and online monitoring. In addition    ###
+//##              the config for the ASICs is set read into the arduino     ###
+//##              code. This code provides the structure to run the DAQ.    ###
+//##              However DAQDriver.cc runs the DAQ                         ###    
+//## Updates:     28th Nov 2018 - Readout stream complete                   ###
+//## Updated:     11th Feb 2022 - Add Exteranl Trigger blocks               ###
+//#############################################################################            
 
 #include "../include/PixelReadout.hh"
 
