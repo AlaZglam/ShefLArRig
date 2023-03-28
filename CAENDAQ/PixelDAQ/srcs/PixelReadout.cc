@@ -488,54 +488,6 @@ int DAQ::PixelReadout::InitialiseOffsets(){
     ret = CAEN_DGTZ_WriteRegister(handle[b], address_6, offset_6);
     ret = CAEN_DGTZ_WriteRegister(handle[b], address_7, offset_7);
      
-//    uint32_t test;
-//    ret = CAEN_DGTZ_ReadRegister(handle[b], address_0, &test);
-//    std::cout << "0: " << test << std::endl;
-//
-//    ret = CAEN_DGTZ_ReadRegister(handle[b], address_1, &test);
-//    std::cout << "1: " << test << std::endl;
-//
-//    ret = CAEN_DGTZ_ReadRegister(handle[b], address_2, &test);
-//    std::cout << "2: " << test << std::endl;
-//
-//    ret = CAEN_DGTZ_ReadRegister(handle[b], address_3, &test);
-//    std::cout << "3: " << test << std::endl;
-//
-//    ret = CAEN_DGTZ_ReadRegister(handle[b], address_4, &test);
-//    std::cout << "4: " << test << std::endl;
-//
-//    ret = CAEN_DGTZ_ReadRegister(handle[b], address_5, &test);
-//    std::cout << "5: " << test << std::endl;
-//
-//    ret = CAEN_DGTZ_ReadRegister(handle[b], address_6, &test);
-//    std::cout << "6: " << test << std::endl;
-//
-//    ret = CAEN_DGTZ_ReadRegister(handle[b], address_7, &test);
-//    std::cout << "7: " << test << std::endl;
-
-//------------------OLD CODE by Dom--------------------------//
-// Read from config file and set dc accordingly
-//
-//----------------------------------------------------------// 
-//    for(uint32_t group=0; group<8; ++group){
-//      //Set DC offset for  V1740 is controlled by a 16bits DAC and by default off set is set of -Vpp/2 so range is from -Vpp/2 to +Vpp/2. for V1740 Vpp=2V DCOffset set per bit 0 to 65535. Bit 0 in the daq is +1V.  
-//      //0x10C0 + 0x100· n -> Channel address for Correction offset:  0....3 
-//      //0x10C4 + 0x100· n -> Channel address for Correction offset: 4....7
-//
-//      //The user has given an offset in mV so convert from this 0 mV means the DAQ is set at baseline of 1V. 1 bit = 0.03051757812 mV. 
-//      
-//      float    Offset_fine  = DAQConfig.GroupDCOffset[board_address][group]; 
-//      float    ADCOffset = (uint32_t) Offset_fine*65536/2000;
-//
-//      std::cout << group << ": mV Offset: " << DAQConfig.GroupDCOffset[board_address][group] << ", ADC Offset: " << ADCOffset <<  std::endl;
-//
-//      if(ret == CAEN_DGTZ_Success){ret = CAEN_DGTZ_SetGroupDCOffset(handle[b],group,ADCOffset);} 
-//   
-//      uint32_t test;
-//      ret = CAEN_DGTZ_GetGroupDCOffset(handle[b], group, &test);
-//      std::cout << group << ": Get Group DC Offset: " << test << std::endl;
-//    }
-//------------------OLD CODE by Dom--------------------------------//
   }
   
   if(ret != CAEN_DGTZ_Success){
