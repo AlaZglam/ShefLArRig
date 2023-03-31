@@ -5,7 +5,7 @@
 //####### Email:        aazglam1@sheffield.ac.uk              #######\\
 //#######               ala.zeglam10@gmail.com                #######\\
 //#######                                                     #######\\
-//####### Description: Code Take the fourier tranform of the  #######\\
+//####### Description: Code Take the fourier transform of the #######\\
 //#######              data and averages them.                #######\\
 //#######                                                     #######\\
 //####### Last Updated: 26 July 2022                          #######\\
