@@ -14,10 +14,10 @@
                              //#############################
                              //######## WARNING !!! ########
                              //#############################
-//############################################################################################
-//#######      To run this file please use something similar to this:                  #######
-//#######      root -l  'SubSystemCRT_DrawWaveforms.cc("YourROOTFileName.root")'       #######
-//############################################################################################
+//######################################################################################################
+//#######      To run this file please use something similar to this:                            #######
+//#######      root -l  'SubSystemCRT_DrawWaveforms.cc("YourROOTFileName.root", Event Number)'   #######
+//######################################################################################################
 //
 
 //Decoder Includes                                                                                                                         
@@ -138,29 +138,7 @@ void SubSystemCRT_DrawWaveforms(std::string filename, int NumberOfEvent){
       gPad->Update();
 
       std::cout << "Event Complete" << std::endl;
-      //Check to see if we have moved on 
-      /*while(!kbhit()){
-        gSystem->ProcessEvents();
-      }
-
-      char ch;
-      ch = getch();
-      switch(ch){
-      case 'e': 
-        std::cout << "Enter an Event number: ";
-        std::cin >> i;
-        gPad->Close();
-        break; 
-    
-      case 'q': 
-        gPad->Close();
-        return 0;
-    
-      case 'n':
-        gPad->Close();
-        if(i==EventTree->GetEntries()){return 0;}
-        ++i;
-        break;*/
+      //
       }
     }
   }
